@@ -5,6 +5,7 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   .azul{
     background: teal;
   }
+  
   img {
     display: block;
     max-width: 100%;
@@ -20,9 +21,6 @@ body, h1, h2, ul, li, p, dd, dt, dl {
     -webkit-font-smoothing: antialiased;
     display: grid;
     grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
-  }
-  html.textomaior{
-    font-size: 150%;
   }
   
   .menu {
@@ -40,7 +38,7 @@ body, h1, h2, ul, li, p, dd, dt, dl {
   
   .menu li a {
     display: block;
-    padding: 18px 18px;
+    padding: 10px;
     margin-right: 10px;
     color: #222;
     text-decoration: none;
@@ -48,7 +46,7 @@ body, h1, h2, ul, li, p, dd, dt, dl {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.875rem;
-    letter-spacing: .1rem;
+    letter-spacing: .1em;
   }
   
   .grid-section {
@@ -66,7 +64,7 @@ body, h1, h2, ul, li, p, dd, dt, dl {
     font-family:  georgia;
     font-size: 6rem;
     line-height: 1;
-    font-weight: normal;
+    font-weight: 400;
     margin-bottom: 1rem;
     grid-column: 1 / 4;
   }

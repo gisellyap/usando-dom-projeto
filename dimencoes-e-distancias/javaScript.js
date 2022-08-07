@@ -197,9 +197,28 @@ linksInternos.forEach((link)=>{
 
 //SELECIONE TODOS OS ELEMENTOS DO SITE COMEÇANDO A PARTIR DO BODY,AO CLIQUE EXATAMENTE QUAIS ELEMENTOS ESTAO SENDO CLICADOS;
 
+// const todosElementos= document.querySelectorAll('body *');
+
+// function handleElemento (event){
+//     event.currentTarget.remove();
+// }
+
+// todosElementos.forEach((elemento)=>{
+//     elemento.addEventListener('click', handleElemento);
+// })
+// console.log(todosElementos);
 
 // UTILIZANDO O CODIGO ANTERIOR, AO INVES DE MOSTRAR NO CONSOLE, REMOVA O ELEMENTO QUE ESTA SENDO CLICADO, O METODO REMOVE()
 //REMOVE UM ELEMENTO
 
 // SE O USUARIO CLICAR NA TECLA (T), AUMENTE TODO O TEXTO DO SITE
 
+function handleClickT(event){
+    console.log(event.key)
+    if(event.key==='t'){
+        console.log('clicou no t');
+        document.documentElement.classList.toggle('textomaior');
+    }
+}
+
+window.addEventListener('keydown', handleClickT);
