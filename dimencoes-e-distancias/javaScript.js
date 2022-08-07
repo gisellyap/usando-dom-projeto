@@ -177,6 +177,29 @@ imgs.forEach((event)=>{
     event.addEventListener('click', handleImg)
 });
 
+//QUANDO O USUARIO CLICAR NAS LINHAS INTERNAS DO SITE, ADICIONE A CLASSE ATIVO AO ITEM CLICADO E REMOVA DOS DEMAIS ITENS
+//CASO ELES POSSUAM A MESMA. PREVINA O COMPORTAMENTO PADRAO DESSAS LINHAS;
+
+const linksInternos = document.querySelectorAll('a[href^="#');
+
+function handleLink (event){
+    event.preventDefault();
+    linksInternos.forEach((link)=>{
+        link.classList.remove('ativo');
+    })
+
+    event.currentTarget.classList.add('ativo');
+}
+
+linksInternos.forEach((link)=>{
+    link.addEventListener('click', handleLink)
+})
+
+//SELECIONE TODOS OS ELEMENTOS DO SITE COMEÇANDO A PARTIR DO BODY,AO CLIQUE EXATAMENTE QUAIS ELEMENTOS ESTAO SENDO CLICADOS;
 
 
+// UTILIZANDO O CODIGO ANTERIOR, AO INVES DE MOSTRAR NO CONSOLE, REMOVA O ELEMENTO QUE ESTA SENDO CLICADO, O METODO REMOVE()
+//REMOVE UM ELEMENTO
+
+// SE O USUARIO CLICAR NA TECLA (T), AUMENTE TODO O TEXTO DO SITE
 
